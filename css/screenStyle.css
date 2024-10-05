@@ -1,0 +1,142 @@
+html {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-text-color: #808080;
+  --global-bcg-color: #000000;
+  --defolt-white-color: #ffffff;
+  --akcent-color: #0b1b5f;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--global-bcg-color);
+  color: var(--primary-text-color);
+  font-family: Montserrat, 'sans-serif';
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding-left: 70px;
+  padding-right: 70px;
+  background-color: #222222;
+
+}
+.svg {
+  width: 30px;
+  height: 30px;
+}
+
+.logo {
+  display:flex;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 40px;
+  align-items: center;
+  gap:15px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.header-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 50px;
+}
+.header-item {
+  color: var(--defolt-white-color);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.header-link:hover {
+  color: #0066cc;
+}
+.header-link {
+  font-weight: 400;
+  color: var(--defolt-white-color);
+}
+
+
+
+
+
+.main-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.description {
+  margin: 20px 0;
+}
+.advantages {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0;
+}
+.advantage-item {
+  width: 30%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+}
+.advantage-item h3 {
+  color: #0066cc;
+}
+.popular-destinations {
+  margin-top: 40px;
+}
+.destination {
+  margin: 10px;
+  text-align: center;
+}
+
+.destination-text {
+  font-size: 30px;
+}
+.img-destination {
+  border-radius: 20px;
+  width: 100wv;
+  border: 5px solid var(--defolt-white-color);
+}
+
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+}
