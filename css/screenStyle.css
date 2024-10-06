@@ -129,7 +129,6 @@ body {
 
 
 
-
 /*=============================================
 =            Main saction in index.html style            =
 =============================================*/
@@ -171,7 +170,6 @@ body {
 }
 .img-destination {
   border-radius: 20px;
-  width: 100wv;
   border: 5px solid var(--defolt-white-color);
 }
 

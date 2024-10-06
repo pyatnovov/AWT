@@ -21,19 +21,17 @@
   </head>
 
   <body>
-    <headder class="header">
-
-        <a href="/" class="logo">Travel
+    <header class="header">
+      <a href="/" class="logo"
+        >Travel
         <svg class="svg">
           <use href="./img/svg/symbol-defs.svg#icon-airplane"></use>
         </svg>
-        </a>
+      </a>
       <div class="header_burger">
-      <span>
+        <span> </span>
+      </div>
 
-      </span>
-    </div>
-        
       <nav class="navigation">
         <ul class="header-list">
           <li class="header-item">
@@ -50,7 +48,7 @@
           </li>
         </ul>
       </nav>
-    </headder>
+    </header>
 
     <main>
       <section class="main-section">
@@ -88,8 +86,12 @@
         <ol class="destination-list">
           <li class="destination-item">
             <img
-              srcset="./img/fig/paris-medium.jpg 650w,./img/fig/paris-large.jpg 800w,./img/fig/paris-small.jpg 300w"
-              sizes="(max-width:700px) 300px,(max-width: 850px) 650px,800px"  
+              srcset="
+                ./img/fig/paris-medium.jpg 650w,
+                ./img/fig/paris-large.jpg  800w,
+                ./img/fig/paris-small.jpg  300w
+              "
+              sizes="(max-width:700px) 300px,(max-width: 850px) 650px,800px"
               class="img-destination"
               src="img/fig/paris-large.jpg"
               alt="Paris"
@@ -99,8 +101,12 @@
 
           <li class="destination-item">
             <img
-              srcset="./img/fig/bali-medium.jpg 650w,./img/fig/bali-large.jpg 800w,./img/fig/bali-small.jpg 300w"
-              sizes="(max-width:700px) 300px,(max-width: 850px) 650px,800px"         
+              srcset="
+                ./img/fig/bali-medium.jpg 650w,
+                ./img/fig/bali-large.jpg  800w,
+                ./img/fig/bali-small.jpg  300w
+              "
+              sizes="(max-width:700px) 300px,(max-width: 850px) 650px,800px"
               class="img-destination"
               src="./img/fig/bali-large.jpg"
               alt="Bali"
@@ -110,8 +116,12 @@
 
           <li class="destination-item">
             <img
-            srcset="./img/fig/rum-medium.jpg 650w,./img/fig/rum-large.jpg 800w,./img/fig/rum-small.jpg 300w"
-              sizes="(max-width:700px) 300px,(max-width: 850px) 650px,800px"       
+              srcset="
+                ./img/fig/rum-medium.jpg 650w,
+                ./img/fig/rum-large.jpg  800w,
+                ./img/fig/rum-small.jpg  300w
+              "
+              sizes="(max-width:700px) 300px,(max-width: 850px) 650px,800px"
               class="img-destination"
               src="./img/fig/rum-large.jpg"
               alt="Rome"
@@ -121,8 +131,12 @@
 
           <li class="destination-item">
             <img
-              srcset="./img/fig/kviv-medium.jpg 650w,./img/fig/kviv-large.jpg 800w,./img/fig/kyiv-small.jpg 300w"
-              sizes="(max-width:700px) 300px,(max-width: 850px) 650px,800px"           
+              srcset="
+                ./img/fig/kviv-medium.jpg 650w,
+                ./img/fig/kviv-large.jpg  800w,
+                ./img/fig/kyiv-small.jpg  300w
+              "
+              sizes="(max-width:700px) 300px,(max-width: 850px) 650px,800px"
               class="img-destination"
               src="./img/fig/kviv-large.jpg"
               alt="Kyiv"
@@ -131,18 +145,20 @@
           </li>
         </ol>
 
-
 <div class="table-container">
   <h2 class="table-title">Popular Travel Destinations</h2>
   <table class="tourism-table">
     <thead>
       <tr class="table-header-row">
-        <th class="table-header" rowspan="2" >Country</th>
+        <th class="table-header" rowspan="2">Country</th>
         <th class="table-header" rowspan="2">City</th>
         <th class="table-header" colspan="2">Details</th>
         <th class="table-header" rowspan="2">Description</th>
-    
-</tr>
+      </tr>
+      <tr class="table-header-row">
+        <th class="table-header">Price ($)</th>
+        <th class="table-header">Rating</th>
+      </tr>
     </thead>
     <tbody>
       <tr class="table-row">
@@ -196,17 +212,16 @@
       <p>&copy; Tourist site. All rights reserved.</p>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>
+    
+    <script>
       $(document).ready(function () {
         $('.header_burger').click(function () {
           $(this).toggleClass('active');
           $('.header-list').toggleClass('active');
         });
       });
-  </script>
+    </script>
   </body>
 </html>
-
