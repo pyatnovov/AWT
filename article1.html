@@ -13,14 +13,19 @@
   </head>
   <body>
     <headder class="header">
+
         <a href="/" class="logo">Travel
         <svg class="svg">
           <use href="./img/svg/symbol-defs.svg#icon-airplane"></use>
         </svg>
-        </a>      
-      <nav class="nav">
+        </a>
+      <div class="header_burger">
+      <span>
 
-
+      </span>
+    </div>
+        
+      <nav class="navigation">
         <ul class="header-list">
           <li class="header-item">
             <a href="/index.html" class="header-link">Home</a>
@@ -87,6 +92,16 @@
     <footer class="footer">
       <p>&copy; Tourist site. All rights reserved.</p>
     </footer>
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+      $(document).ready(function () {
+        $('.header_burger').click(function () {
+          $(this).toggleClass('active');
+          $('.header-list').toggleClass('active');
+        });
+      });
+  </script>
   </body>
 </htmtl>
 

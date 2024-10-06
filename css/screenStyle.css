@@ -1,3 +1,7 @@
+/*=============================================
+=            Base-style            =
+=============================================*/
+
 html {
   box-sizing: border-box;
 }
@@ -7,6 +11,7 @@ html {
   --global-bcg-color: #000000;
   --defolt-white-color: #ffffff;
   --akcent-color: #0b1b5f;
+  --hover-card-color :#444444;
 }
 
 *,
@@ -14,8 +19,6 @@ html {
 *::before {
   box-sizing: inherit;
 }
-
-
 
 ul,
 ol {
@@ -38,6 +41,7 @@ body {
   color: var(--primary-text-color);
   font-family: Montserrat, 'sans-serif';
 }
+
 .border {
   border: 5px solid rgba(255, 255, 255, 0.8);
   border-radius: 10px;
@@ -45,6 +49,19 @@ body {
   box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
   background-color: rgba(50, 50, 50, 0.8); 
 }
+
+/*=====  End of Base-style  ======*/
+
+
+
+
+
+
+/*=============================================
+=            Header style            =
+=============================================*/
+
+
 .header {
   display: flex;
   flex-direction: row;
@@ -54,8 +71,12 @@ body {
   padding-left: 70px;
   padding-right: 70px;
   background-color: #222222;
+  position: sticky;
+  top:0;
+  z-index: 50;
 
 }
+
 .svg {
   width: 30px;
   height: 30px;
@@ -68,9 +89,11 @@ body {
   font-size: 40px;
   align-items: center;
   gap:15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.nav {
+.navigation {
   display: flex;
   flex-direction: row;
   padding-top: 25px;
@@ -97,7 +120,19 @@ body {
 }
 
 
+/*=====  End of Header style  ======*/
 
+
+
+
+
+
+
+
+
+/*=============================================
+=            Main saction in index.html style            =
+=============================================*/
 
 
 .main-section {
@@ -115,12 +150,13 @@ body {
 }
 .advantage-item {
   width: 30%;
-  background-color: #f0f0f0;
   padding: 20px;
-  border-radius: 10px;
+}
+.advantage-item:hover {
+  background-color: var(--hover-card-color);
 }
 .advantage-item h3 {
-  color: #0066cc;
+  color: var(--defolt-white-color);
 }
 .popular-destinations {
   margin-top: 40px;
@@ -140,16 +176,12 @@ body {
 }
 
 
-.footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  bottom: 0;
-  width: 100%;
-}
 
-
+/**
+ *
+ * Table style
+ *
+ */
 
 
 .table-container {
@@ -180,7 +212,7 @@ body {
 
 .table-header {
     padding: 12px 15px;
-    text-align: left;
+    text-align: center;
     background-color: #333333;
     color: #ffffff;
     text-transform: uppercase;
@@ -217,7 +249,7 @@ body {
     }
 
     .table-header {
-        text-align: left;
+        text-align: center;
         background-color: #333333;
     }
 
@@ -232,9 +264,22 @@ body {
     .table-row {
         margin-bottom: 10px;
         display: block;
-        border-bottom: 2px solid #444444;
+        border-bottom: 2px solid var(--hover-card-color);
     }
 }
+
+
+/*=====  End of Main saction in index.html style  ======*/
+
+
+
+
+
+
+
+/*=============================================
+=            About us section style            =
+=============================================*/
 
 
 
@@ -267,6 +312,9 @@ body {
   padding: 25px 15px;
   margin: 0;
   
+}
+.about-item:hover {
+  background-color: var(--hover-card-color);
 }
 .about-item h2 {
   display: flex;
@@ -382,6 +430,23 @@ margin-bottom: 30px;
 
 }
 
+.advantages-item:hover {
+  background-color: var(--hover-card-color);
+}
+/*=====  End of About us section style  ======*/
+
+
+
+
+
+
+
+
+/*=============================================
+=            Tips section style            =
+=============================================*/
+
+
 
 .tips-section {
     padding: 20px;
@@ -401,7 +466,6 @@ margin-bottom: 30px;
 }
 
 .tips-list {
-    list-style-position: inside; 
     padding-left: 0; 
     margin: 0; 
 }
@@ -426,7 +490,7 @@ margin-bottom: 30px;
 
 
 .tip-item:hover {
-    background-color: #444; 
+  background-color: var(--hover-card-color); 
 }
 
 
@@ -457,6 +521,107 @@ margin-bottom: 30px;
         font-size: 12px; 
     }
 }
+
+/*=====  End of Tips section style  ======*/
+
+
+
+
+
+
+
+
+/*=============================================
+=            Footer style            =
+=============================================*/
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+}
+
+/*=====  End of Footer style  ======*/
+
+
+
+
+/*=============================================
+=            Burger menu            =
+=============================================*/
+
+.header_burger {
+  display: none;
+  width: 30px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.header_burger span,
+.header_burger span::before,
+.header_burger span::after {
+  display: block;
+  background-color: var(--defolt-white-color);
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  transition: all 0.3s ease;
+}
+
+.header_burger span::before {
+  content: "";
+  top: -8px;
+}
+
+.header_burger span::after {
+  content: "";
+  top: 8px;
+}
+
+.header_burger.active span {
+  background-color: transparent;
+}
+
+.header_burger.active span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.header_burger.active span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 770px) {
+  .header_burger {
+    display: block;
+    margin-left: auto;
+  }
+
+  .header-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #222;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .header-list.active {
+    display: flex;
+  }
+}
+
+
+
+/*=====  End of Burger menu  ======*/
 
 
 

@@ -12,12 +12,19 @@
   </head>
   <body>
     <headder class="header">
+
         <a href="/" class="logo">Travel
         <svg class="svg">
           <use href="./img/svg/symbol-defs.svg#icon-airplane"></use>
         </svg>
-        </a>      
-      <nav class="nav">
+        </a>
+      <div class="header_burger">
+      <span>
+
+      </span>
+    </div>
+        
+      <nav class="navigation">
         <ul class="header-list">
           <li class="header-item">
             <a href="/index.html" class="header-link">Home</a>
@@ -40,32 +47,32 @@
         <h1 class="tips-title">On this page, we have collected the top tips for first-time travelers</h1>
         <ol class="tips-list">
           <li class="tip-item">
-            <h2 class="tip-title">1. Plan Your Trip Carefully</h2>
+            <h2 class="tip-title">Plan Your Trip Carefully</h2>
             <p class="tip-text">Start by researching your destination. Make sure to check the best time to visit, popular attractions, and cultural norms. Create an itinerary to ensure you don’t miss anything important.</p>
           </li>
 
           <li class="tip-item">
-            <h2 class="tip-title">2. Pack Smart and Light</h2>
+            <h2 class="tip-title">Pack Smart and Light</h2>
             <p class="tip-text">Don't overpack! Stick to essentials and consider the weather. A well-organized suitcase can make your trip much smoother. Don’t forget a travel-sized first aid kit!</p>
           </li>
 
           <li class="tip-item">
-            <h2 class="tip-title">3. Get Travel Insurance</h2>
+            <h2 class="tip-title">Get Travel Insurance</h2>
             <p class="tip-text">Having travel insurance can give you peace of mind, covering unexpected events like medical emergencies, cancellations, or lost luggage.</p>
           </li>
 
           <li class="tip-item">
-            <h2 class="tip-title">4. Stay Connected</h2>
+            <h2 class="tip-title">Stay Connected</h2>
             <p class="tip-text">Make sure to have access to maps and important travel documents digitally. It's also helpful to purchase a local SIM card or a mobile plan that works abroad.</p>
           </li>
 
           <li class="tip-item">
-            <h2 class="tip-title">5. Learn Key Phrases in the Local Language</h2>
+            <h2 class="tip-title">Learn Key Phrases in the Local Language</h2>
             <p class="tip-text">While it’s not necessary to be fluent, learning a few key phrases in the local language, like greetings and polite expressions, can go a long way in making your trip more enjoyable.</p>
           </li>
 
           <li class="tip-item">
-            <h2 class="tip-title">6. Keep an Open Mind</h2>
+            <h2 class="tip-title">Keep an Open Mind</h2>
             <p class="tip-text">Traveling is all about new experiences. Be open to trying new foods, exploring different customs, and engaging with locals. It's these unique moments that will make your trip unforgettable.</p>
           </li>
         </ol>
@@ -77,5 +84,18 @@
     <footer class="footer">
       <p>&copy; Tourist site. All rights reserved.</p>
     </footer>
+
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+      $(document).ready(function () {
+        $('.header_burger').click(function () {
+          $(this).toggleClass('active');
+          $('.header-list').toggleClass('active');
+        });
+      });
+  </script>
   </body>
+
+
 </htmtl>

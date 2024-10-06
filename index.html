@@ -22,14 +22,19 @@
 
   <body>
     <headder class="header">
+
         <a href="/" class="logo">Travel
         <svg class="svg">
           <use href="./img/svg/symbol-defs.svg#icon-airplane"></use>
         </svg>
-        </a>      
-      <nav class="nav">
+        </a>
+      <div class="header_burger">
+      <span>
 
-
+      </span>
+    </div>
+        
+      <nav class="navigation">
         <ul class="header-list">
           <li class="header-item">
             <a href="/index.html" class="header-link">Home</a>
@@ -47,12 +52,6 @@
       </nav>
     </headder>
 
-
-
-
-
-
-    
     <main>
       <section class="main-section">
         <h1 class="description">
@@ -62,7 +61,7 @@
         </h1>
 
         <ul class="advantages">
-          <li class="advantage-item ">
+          <li class="advantage-item border">
             <h3>A wide selection of directions</h3>
             <p>
               From city tours to exotic trips, find the perfect destination for
@@ -70,7 +69,7 @@
             </p>
           </li>
 
-          <li class="advantage-item">
+          <li class="advantage-item border">
             <h3>Reliable tour operators</h3>
             <p>
               We cooperate only with verified operators for your safety and
@@ -78,7 +77,7 @@
             </p>
           </li>
 
-          <li class="advantage-item">
+          <li class="advantage-item border">
             <h3>Individual offers</h3>
             <p>We offer tours that are adapted to your needs and wishes.</p>
           </li>
@@ -133,56 +132,81 @@
         </ol>
 
 
-        <div class="table-container">
-          <h2 class="table-title">Popular Travel Destinations</h2>
-          <table class="tourism-table">
-            <thead>
-              <tr class="table-header-row">
-                <th class="table-header">Country</th>
-                <th class="table-header">City</th>
-                <th class="table-header">Price per Night (USD)</th>
-                <th class="table-header">Rating</th>
-                <th class="table-header">Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="table-row">
-                <td class="table-data">France</td>
-                <td class="table-data">Paris</td>
-                <td class="table-data">150</td>
-                <td class="table-data">⭐⭐⭐⭐</td>
-                <td class="table-data">A romantic city with a rich history and culture.</td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-data">Italy</td>
-                <td class="table-data">Rome</td>
-                <td class="table-data">120</td>
-                <td class="table-data">⭐⭐⭐⭐⭐</td>
-                <td class="table-data">The eternal city with incredible architectural landmarks.</td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-data">Japan</td>
-                <td class="table-data">Tokyo</td>
-                <td class="table-data">200</td>
-                <td class="table-data">⭐⭐⭐⭐</td>
-                <td class="table-data">A modern metropolis with traditional temples and gardens.</td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-data">Mexico</td>
-                <td class="table-data">Cancun</td>
-                <td class="table-data">100</td>
-                <td class="table-data">⭐⭐⭐</td>
-                <td class="table-data">A resort town with pristine beaches and turquoise waters.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+<div class="table-container">
+  <h2 class="table-title">Popular Travel Destinations</h2>
+  <table class="tourism-table">
+    <thead>
+      <tr class="table-header-row">
+        <th class="table-header" rowspan="2" >Country</th>
+        <th class="table-header" rowspan="2">City</th>
+        <th class="table-header" colspan="2">Details</th>
+        <th class="table-header" rowspan="2">Description</th>
+    
+</tr>
+    </thead>
+    <tbody>
+      <tr class="table-row">
+        <td class="table-data">France</td>
+        <td class="table-data">Paris</td>
+        <td class="table-data">150</td>
+        <td class="table-data">⭐⭐⭐⭐</td>
+        <td class="table-data">A romantic city with a rich history and culture.</td>
+      </tr>
+      <tr class="table-row">
+        <td class="table-data" rowspan="2">Italy</td>
+        <td class="table-data">Rome</td>
+        <td class="table-data">120</td>
+        <td class="table-data">⭐⭐⭐⭐⭐</td>
+        <td class="table-data">The eternal city with incredible architectural landmarks.</td>
+      </tr>
+      <tr class="table-row">
+        <td class="table-data">Venice</td>
+        <td class="table-data">180</td>
+        <td class="table-data">⭐⭐⭐⭐</td>
+        <td class="table-data">A beautiful city known for its canals and gondolas.</td>
+      </tr>
+      <tr class="table-row">
+        <td class="table-data">Japan</td>
+        <td class="table-data">Tokyo</td>
+        <td class="table-data">200</td>
+        <td class="table-data">⭐⭐⭐⭐</td>
+        <td class="table-data">A modern metropolis with traditional temples and gardens.</td>
+      </tr>
+      <tr class="table-row">
+        <td class="table-data" rowspan="2">Mexico</td>
+        <td class="table-data">Cancun</td>
+        <td class="table-data">100</td>
+        <td class="table-data">⭐⭐⭐</td>
+        <td class="table-data">A resort town with pristine beaches and turquoise waters.</td>
+      </tr>
+      <tr class="table-row">
+        <td class="table-data">Mexico City</td>
+        <td class="table-data">130</td>
+        <td class="table-data">⭐⭐⭐⭐</td>
+        <td class="table-data">The bustling capital with rich history and cultural attractions.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
       </section>
     </main>
 
     <footer class="footer">
       <p>&copy; Tourist site. All rights reserved.</p>
     </footer>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+      $(document).ready(function () {
+        $('.header_burger').click(function () {
+          $(this).toggleClass('active');
+          $('.header-list').toggleClass('active');
+        });
+      });
+  </script>
   </body>
 </html>
 
